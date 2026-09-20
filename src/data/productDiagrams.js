@@ -6,7 +6,7 @@ import procoreFeatureDependency from "../assets/procore/feature-dependency.png";
 export const productDiagrams = {
   "google-drive": {
     src: googleDriveFeatureDependency,
-    alt: "Google Drive primitive diagram showing Search Results and a Template feeding a Doc, outside-product Define and Confirm inputs pointing to the Doc, review comments moving from open to resolved, the Doc's current version linking to Version History, and its document ID linking to a Shared Drive folder",
+    alt: "Google Drive primitive diagram showing Search Results, a Template, and outside-product Define and Confirm inputs converging on a Doc's document ID; that document ID linking to a comment ID and Shared Drive folder; comments moving from open to resolved; and the Doc's current version linking to Version History",
     source: "diagrams/google-drive-feature-dependency.json",
   },
   github: {
