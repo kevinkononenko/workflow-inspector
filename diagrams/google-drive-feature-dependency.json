@@ -1,106 +1,118 @@
 {
   "entities": [
     {
-      "tag": "Group", "id": "research-files-object",
-      "x": 30, "y": 90, "width": 320, "height": 205,
+      "tag": "Group", "id": "search-results-object",
+      "x": 30, "y": 70, "width": 320, "height": 205,
       "bgColor": "#11151a", "borderColor": "#5f9dff", "borderWidth": 2,
       "cornerRadius": "round", "styleMode": "plain",
       "title": {
-        "text": "Internal Research Files", "icon": "file-search",
+        "text": "Search Results", "icon": "search",
         "iconProps": { "color": "#5f9dff", "size": "lg" },
         "width": "full", "bgColor": "#172234", "color": "#f5f7fa",
         "fontSize": 17, "typeface": "clean", "hAlign": "left"
       }
     },
     {
-      "tag": "Shape", "id": "research-row-file-ids", "containerId": "research-files-object",
-      "shape": "rectangle", "x": 32, "y": 158, "width": 316, "height": 41,
+      "tag": "Shape", "id": "search-row-query", "containerId": "search-results-object",
+      "shape": "rectangle", "x": 32, "y": 138, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "research-file-ids", "containerId": "research-files-object",
-      "x": 50, "y": 168, "width": 280, "height": 22,
-      "text": "file_ids[]", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "search-query", "containerId": "search-results-object",
+      "x": 50, "y": 148, "width": 280, "height": 22,
+      "text": "query", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "research-row-findings", "containerId": "research-files-object",
-      "shape": "rectangle", "x": 32, "y": 199, "width": 316, "height": 41,
+      "tag": "Shape", "id": "search-row-files", "containerId": "search-results-object",
+      "shape": "rectangle", "x": 32, "y": 179, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "research-findings", "containerId": "research-files-object",
-      "x": 50, "y": 209, "width": 280, "height": 22,
-      "text": "matched_findings[]", "fontSize": 14, "color": "#5f9dff",
+      "tag": "Textbox", "id": "search-files", "containerId": "search-results-object",
+      "x": 50, "y": 189, "width": 185, "height": 22,
+      "text": "result_files[]", "fontSize": 14, "color": "#5f9dff",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "research-row-ai-access", "containerId": "research-files-object",
-      "shape": "rectangle", "x": 32, "y": 240, "width": 316, "height": 41,
+      "tag": "Textbox", "id": "search-files-stage", "containerId": "search-results-object",
+      "x": 240, "y": 189, "width": 85, "height": 22,
+      "text": "LOCATE", "fontSize": 12, "color": "#b9c0ca",
+      "typeface": "mono", "hAlign": "right", "fixedWidth": true
+    },
+    {
+      "tag": "Shape", "id": "search-row-overview", "containerId": "search-results-object",
+      "shape": "rectangle", "x": 32, "y": 220, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "research-ai-access", "containerId": "research-files-object",
-      "x": 50, "y": 250, "width": 280, "height": 22,
-      "text": "can_access_via_gen_ai", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "search-overview", "containerId": "search-results-object",
+      "x": 50, "y": 230, "width": 280, "height": 22,
+      "text": "ai_overview", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
 
     {
       "tag": "Group", "id": "template-object",
-      "x": 410, "y": 40, "width": 300, "height": 205,
+      "x": 30, "y": 345, "width": 320, "height": 205,
       "bgColor": "#11151a", "borderColor": "#ffb84d", "borderWidth": 2,
       "cornerRadius": "round", "styleMode": "plain",
       "title": {
-        "text": "Company PRD Template", "icon": "layout-template",
+        "text": "Template", "icon": "layout-template",
         "iconProps": { "color": "#ffb84d", "size": "lg" },
         "width": "full", "bgColor": "#2a2014", "color": "#f5f7fa",
         "fontSize": 17, "typeface": "clean", "hAlign": "left"
       }
     },
     {
-      "tag": "Shape", "id": "template-row-file-id", "containerId": "template-object",
-      "shape": "rectangle", "x": 412, "y": 108, "width": 296, "height": 41,
+      "tag": "Shape", "id": "template-row-id", "containerId": "template-object",
+      "shape": "rectangle", "x": 32, "y": 413, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "template-file-id", "containerId": "template-object",
-      "x": 430, "y": 118, "width": 260, "height": 22,
-      "text": "template_file_id", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "template-id", "containerId": "template-object",
+      "x": 50, "y": 423, "width": 280, "height": 22,
+      "text": "template_id", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "template-row-category", "containerId": "template-object",
-      "shape": "rectangle", "x": 412, "y": 149, "width": 296, "height": 41,
+      "tag": "Shape", "id": "template-row-name", "containerId": "template-object",
+      "shape": "rectangle", "x": 32, "y": 454, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "template-category", "containerId": "template-object",
-      "x": 430, "y": 159, "width": 260, "height": 22,
-      "text": "category: product requirements", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "template-name", "containerId": "template-object",
+      "x": 50, "y": 464, "width": 280, "height": 22,
+      "text": "template_name", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "template-row-discoverable", "containerId": "template-object",
-      "shape": "rectangle", "x": 412, "y": 190, "width": 296, "height": 41,
+      "tag": "Shape", "id": "template-row-copy", "containerId": "template-object",
+      "shape": "rectangle", "x": 32, "y": 495, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "template-discoverable", "containerId": "template-object",
-      "x": 430, "y": 200, "width": 260, "height": 22,
-      "text": "discoverable_to_org", "fontSize": 14, "color": "#ffb84d",
+      "tag": "Textbox", "id": "template-copy", "containerId": "template-object",
+      "x": 50, "y": 505, "width": 185, "height": 22,
+      "text": "make_copy", "fontSize": 14, "color": "#ffb84d",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
+    },
+    {
+      "tag": "Textbox", "id": "template-copy-stage", "containerId": "template-object",
+      "x": 240, "y": 505, "width": 85, "height": 22,
+      "text": "PREPARE", "fontSize": 12, "color": "#b9c0ca",
+      "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
 
     {
       "tag": "Shape", "id": "customer-problem-origin", "shape": "rectangle",
-      "x": 410, "y": 280, "width": 300, "height": 58,
+      "x": 420, "y": 95, "width": 300, "height": 58,
       "bgColor": "#f1f3f5", "borderColor": "#89919c", "borderWidth": 1,
       "borderStyle": "dashed", "cornerRadius": "round", "styleMode": "plain",
       "texts": [
@@ -110,7 +122,7 @@
     },
     {
       "tag": "Shape", "id": "contributor-conversation-origin", "shape": "rectangle",
-      "x": 410, "y": 365, "width": 300, "height": 58,
+      "x": 420, "y": 365, "width": 300, "height": 58,
       "bgColor": "#f1f3f5", "borderColor": "#89919c", "borderWidth": 1,
       "borderStyle": "dashed", "cornerRadius": "round", "styleMode": "plain",
       "texts": [
@@ -120,208 +132,75 @@
     },
 
     {
-      "tag": "Group", "id": "shared-drive-folder-object",
-      "x": 30, "y": 380, "width": 320, "height": 230,
-      "bgColor": "#11151a", "borderColor": "#5f9dff", "borderWidth": 2,
-      "cornerRadius": "round", "styleMode": "plain",
-      "title": {
-        "text": "Shared Drive Folder", "icon": "folder",
-        "iconProps": { "color": "#5f9dff", "size": "lg" },
-        "width": "full", "bgColor": "#172234", "color": "#f5f7fa",
-        "fontSize": 17, "typeface": "clean", "hAlign": "left"
-      }
-    },
-    {
-      "tag": "Shape", "id": "shared-drive-row-drive-id", "containerId": "shared-drive-folder-object",
-      "shape": "rectangle", "x": 32, "y": 448, "width": 316, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "shared-drive-id", "containerId": "shared-drive-folder-object",
-      "x": 50, "y": 458, "width": 280, "height": 22,
-      "text": "drive_id", "fontSize": 14, "color": "#f5f7fa",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "shared-drive-row-folder-id", "containerId": "shared-drive-folder-object",
-      "shape": "rectangle", "x": 32, "y": 489, "width": 316, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "shared-drive-folder-id", "containerId": "shared-drive-folder-object",
-      "x": 50, "y": 499, "width": 280, "height": 22,
-      "text": "folder_id", "fontSize": 14, "color": "#f5f7fa",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "shared-drive-row-members", "containerId": "shared-drive-folder-object",
-      "shape": "rectangle", "x": 32, "y": 530, "width": 316, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "shared-drive-members", "containerId": "shared-drive-folder-object",
-      "x": 50, "y": 540, "width": 280, "height": 22,
-      "text": "members[]", "fontSize": 14, "color": "#f5f7fa",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "shared-drive-row-files", "containerId": "shared-drive-folder-object",
-      "shape": "rectangle", "x": 32, "y": 571, "width": 316, "height": 37,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "shared-drive-files", "containerId": "shared-drive-folder-object",
-      "x": 50, "y": 579, "width": 280, "height": 22,
-      "text": "files[]", "fontSize": 14, "color": "#dfff2f",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-
-    {
-      "tag": "Group", "id": "prd-object",
-      "x": 800, "y": 55, "width": 400, "height": 430,
+      "tag": "Group", "id": "doc-object",
+      "x": 800, "y": 150, "width": 360, "height": 275,
       "bgColor": "#11151a", "borderColor": "#dfff2f", "borderWidth": 2,
       "cornerRadius": "round", "styleMode": "plain",
       "title": {
-        "text": "Product Requirements Doc", "icon": "file-text",
+        "text": "Doc", "icon": "file-text",
         "iconProps": { "color": "#dfff2f", "size": "lg" },
         "width": "full", "bgColor": "#20270f", "color": "#f5f7fa",
         "fontSize": 17, "typeface": "clean", "hAlign": "left"
       }
     },
     {
-      "tag": "Shape", "id": "prd-row-id", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 123, "width": 396, "height": 41,
+      "tag": "Shape", "id": "doc-row-id", "containerId": "doc-object",
+      "shape": "rectangle", "x": 802, "y": 218, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "prd-id", "containerId": "prd-object",
-      "x": 820, "y": 133, "width": 350, "height": 22,
-      "text": "document_id", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "doc-id", "containerId": "doc-object",
+      "x": 820, "y": 228, "width": 320, "height": 22,
+      "text": "document_id", "fontSize": 14, "color": "#dfff2f",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "prd-row-customer-problem", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 164, "width": 396, "height": 41,
+      "tag": "Shape", "id": "doc-row-parent-folder", "containerId": "doc-object",
+      "shape": "rectangle", "x": 802, "y": 259, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "prd-customer-problem", "containerId": "prd-object",
-      "x": 820, "y": 174, "width": 255, "height": 22,
-      "text": "customer_problem", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "doc-parent-folder", "containerId": "doc-object",
+      "x": 820, "y": 269, "width": 320, "height": 22,
+      "text": "parent_folder_id", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "prd-customer-problem-stage", "containerId": "prd-object",
-      "x": 1080, "y": 174, "width": 95, "height": 22,
-      "text": "DEFINE", "fontSize": 12, "color": "#b9c0ca",
-      "typeface": "mono", "hAlign": "right", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "prd-row-research", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 205, "width": 396, "height": 41,
+      "tag": "Shape", "id": "doc-row-permissions", "containerId": "doc-object",
+      "shape": "rectangle", "x": 802, "y": 300, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "prd-research", "containerId": "prd-object",
-      "x": 820, "y": 215, "width": 255, "height": 22,
-      "text": "research_sources[]", "fontSize": 14, "color": "#5f9dff",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Textbox", "id": "prd-research-stage", "containerId": "prd-object",
-      "x": 1080, "y": 215, "width": 95, "height": 22,
-      "text": "LOCATE", "fontSize": 12, "color": "#b9c0ca",
-      "typeface": "mono", "hAlign": "right", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "prd-row-template", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 246, "width": 396, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "prd-template", "containerId": "prd-object",
-      "x": 820, "y": 256, "width": 255, "height": 22,
-      "text": "template_source_id", "fontSize": 14, "color": "#ffb84d",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Textbox", "id": "prd-template-stage", "containerId": "prd-object",
-      "x": 1080, "y": 256, "width": 95, "height": 22,
-      "text": "PREPARE", "fontSize": 12, "color": "#b9c0ca",
-      "typeface": "mono", "hAlign": "right", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "prd-row-validated-findings", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 287, "width": 396, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "prd-validated-findings", "containerId": "prd-object",
-      "x": 820, "y": 297, "width": 255, "height": 22,
-      "text": "validated_findings[]", "fontSize": 14, "color": "#f5f7fa",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Textbox", "id": "prd-validated-findings-stage", "containerId": "prd-object",
-      "x": 1080, "y": 297, "width": 95, "height": 22,
-      "text": "CONFIRM", "fontSize": 12, "color": "#b9c0ca",
-      "typeface": "mono", "hAlign": "right", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "prd-row-parent-folder", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 328, "width": 396, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "prd-parent-folder", "containerId": "prd-object",
-      "x": 820, "y": 338, "width": 350, "height": 22,
-      "text": "parent_folder_id", "fontSize": 14, "color": "#5f9dff",
-      "typeface": "mono", "hAlign": "left", "fixedWidth": true
-    },
-    {
-      "tag": "Shape", "id": "prd-row-permissions", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 369, "width": 396, "height": 41,
-      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
-    },
-    {
-      "tag": "Textbox", "id": "prd-permissions", "containerId": "prd-object",
-      "x": 820, "y": 379, "width": 255, "height": 22,
+      "tag": "Textbox", "id": "doc-permissions", "containerId": "doc-object",
+      "x": 820, "y": 310, "width": 220, "height": 22,
       "text": "permissions[]", "fontSize": 14, "color": "#dfff2f",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "prd-permissions-stage", "containerId": "prd-object",
-      "x": 1080, "y": 379, "width": 95, "height": 22,
+      "tag": "Textbox", "id": "doc-permissions-stage", "containerId": "doc-object",
+      "x": 1045, "y": 310, "width": 90, "height": 22,
       "text": "EXECUTE", "fontSize": 12, "color": "#b9c0ca",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
     {
-      "tag": "Shape", "id": "prd-row-content", "containerId": "prd-object",
-      "shape": "rectangle", "x": 802, "y": 410, "width": 396, "height": 41,
+      "tag": "Shape", "id": "doc-row-current-version", "containerId": "doc-object",
+      "shape": "rectangle", "x": 802, "y": 341, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
-      "tag": "Textbox", "id": "prd-content", "containerId": "prd-object",
-      "x": 820, "y": 420, "width": 350, "height": 22,
-      "text": "current_content", "fontSize": 14, "color": "#f5f7fa",
+      "tag": "Textbox", "id": "doc-current-version", "containerId": "doc-object",
+      "x": 820, "y": 351, "width": 320, "height": 22,
+      "text": "current_version", "fontSize": 14, "color": "#5f9dff",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
 
     {
       "tag": "Group", "id": "comment-thread-object",
-      "x": 1280, "y": 55, "width": 300, "height": 330,
+      "x": 1240, "y": 30, "width": 300, "height": 330,
       "bgColor": "#11151a", "borderColor": "#ffb84d", "borderWidth": 2,
       "cornerRadius": "round", "styleMode": "plain",
       "title": {
@@ -333,67 +212,67 @@
     },
     {
       "tag": "Shape", "id": "comment-row-id", "containerId": "comment-thread-object",
-      "shape": "rectangle", "x": 1282, "y": 123, "width": 296, "height": 41,
+      "shape": "rectangle", "x": 1242, "y": 98, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-id", "containerId": "comment-thread-object",
-      "x": 1300, "y": 133, "width": 260, "height": 22,
+      "x": 1260, "y": 108, "width": 260, "height": 22,
       "text": "comment_id", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "comment-row-anchor", "containerId": "comment-thread-object",
-      "shape": "rectangle", "x": 1282, "y": 164, "width": 296, "height": 41,
+      "shape": "rectangle", "x": 1242, "y": 139, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-anchor", "containerId": "comment-thread-object",
-      "x": 1300, "y": 174, "width": 260, "height": 22,
+      "x": 1260, "y": 149, "width": 260, "height": 22,
       "text": "anchor", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "comment-row-replies", "containerId": "comment-thread-object",
-      "shape": "rectangle", "x": 1282, "y": 205, "width": 296, "height": 41,
+      "shape": "rectangle", "x": 1242, "y": 180, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-replies", "containerId": "comment-thread-object",
-      "x": 1300, "y": 215, "width": 170, "height": 22,
+      "x": 1260, "y": 190, "width": 170, "height": 22,
       "text": "replies[]", "fontSize": 14, "color": "#ffb84d",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "comment-replies-stage", "containerId": "comment-thread-object",
-      "x": 1475, "y": 215, "width": 80, "height": 22,
+      "x": 1435, "y": 190, "width": 80, "height": 22,
       "text": "MODIFY", "fontSize": 12, "color": "#b9c0ca",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "comment-open", "containerId": "comment-thread-object",
-      "shape": "rectangle", "x": 1300, "y": 285, "width": 110, "height": 62,
+      "shape": "rectangle", "x": 1260, "y": 260, "width": 110, "height": 62,
       "bgColor": "#1a2028", "borderColor": "#69727e", "borderWidth": 1,
       "cornerRadius": "round", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-open-stage", "containerId": "comment-thread-object",
-      "x": 1300, "y": 296, "width": 110, "height": 18,
+      "x": 1260, "y": 271, "width": 110, "height": 18,
       "text": "MONITOR", "fontSize": 12, "color": "#b9c0ca",
       "typeface": "mono", "hAlign": "center", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "comment-open-name", "containerId": "comment-thread-object",
-      "x": 1300, "y": 319, "width": 110, "height": 22,
+      "x": 1260, "y": 294, "width": 110, "height": 22,
       "text": "Open", "fontSize": 15, "color": "#ffffff",
       "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "comment-resolved", "containerId": "comment-thread-object",
-      "shape": "rectangle", "x": 1450, "y": 285, "width": 110, "height": 62,
+      "shape": "rectangle", "x": 1410, "y": 260, "width": 110, "height": 62,
       "bgColor": "#1a2028", "borderColor": "#69727e", "borderWidth": 1,
       "cornerRadius": "round", "styleMode": "plain",
       "texts": [
@@ -403,7 +282,7 @@
 
     {
       "tag": "Group", "id": "version-history-object",
-      "x": 1280, "y": 430, "width": 300, "height": 190,
+      "x": 1240, "y": 420, "width": 300, "height": 190,
       "bgColor": "#11151a", "borderColor": "#5f9dff", "borderWidth": 2,
       "cornerRadius": "round", "styleMode": "plain",
       "title": {
@@ -415,108 +294,164 @@
     },
     {
       "tag": "Shape", "id": "version-row-id", "containerId": "version-history-object",
-      "shape": "rectangle", "x": 1282, "y": 498, "width": 296, "height": 41,
+      "shape": "rectangle", "x": 1242, "y": 488, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-id", "containerId": "version-history-object",
-      "x": 1300, "y": 508, "width": 260, "height": 22,
+      "x": 1260, "y": 498, "width": 260, "height": 22,
       "text": "revision_id", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "version-row-modified", "containerId": "version-history-object",
-      "shape": "rectangle", "x": 1282, "y": 539, "width": 296, "height": 41,
+      "shape": "rectangle", "x": 1242, "y": 529, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-modified", "containerId": "version-history-object",
-      "x": 1300, "y": 549, "width": 260, "height": 22,
+      "x": 1260, "y": 539, "width": 260, "height": 22,
       "text": "modified_time", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Shape", "id": "version-row-name", "containerId": "version-history-object",
-      "shape": "rectangle", "x": 1282, "y": 580, "width": 296, "height": 38,
+      "shape": "rectangle", "x": 1242, "y": 570, "width": 296, "height": 38,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
       "cornerRadius": "sharp", "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-name", "containerId": "version-history-object",
-      "x": 1300, "y": 588, "width": 170, "height": 22,
+      "x": 1260, "y": 578, "width": 170, "height": 22,
       "text": "version_name", "fontSize": 14, "color": "#5f9dff",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "version-name-stage", "containerId": "version-history-object",
-      "x": 1475, "y": 588, "width": 80, "height": 22,
+      "x": 1435, "y": 578, "width": 80, "height": 22,
       "text": "CONCLUDE", "fontSize": 12, "color": "#b9c0ca",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
 
     {
-      "tag": "Textbox", "id": "research-prd-label",
-      "x": 370, "y": 248, "width": 410, "height": 24,
-      "text": "selected files supply prior evidence", "fontSize": 11,
+      "tag": "Group", "id": "shared-drive-folder-object",
+      "x": 1620, "y": 225, "width": 320, "height": 230,
+      "bgColor": "#11151a", "borderColor": "#5f9dff", "borderWidth": 2,
+      "cornerRadius": "round", "styleMode": "plain",
+      "title": {
+        "text": "Shared Drive Folder", "icon": "folder",
+        "iconProps": { "color": "#5f9dff", "size": "lg" },
+        "width": "full", "bgColor": "#172234", "color": "#f5f7fa",
+        "fontSize": 17, "typeface": "clean", "hAlign": "left"
+      }
+    },
+    {
+      "tag": "Shape", "id": "shared-drive-row-drive-id", "containerId": "shared-drive-folder-object",
+      "shape": "rectangle", "x": 1622, "y": 293, "width": 316, "height": 41,
+      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
+      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+    },
+    {
+      "tag": "Textbox", "id": "shared-drive-id", "containerId": "shared-drive-folder-object",
+      "x": 1640, "y": 303, "width": 280, "height": 22,
+      "text": "drive_id", "fontSize": 14, "color": "#f5f7fa",
+      "typeface": "mono", "hAlign": "left", "fixedWidth": true
+    },
+    {
+      "tag": "Shape", "id": "shared-drive-row-folder-id", "containerId": "shared-drive-folder-object",
+      "shape": "rectangle", "x": 1622, "y": 334, "width": 316, "height": 41,
+      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
+      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+    },
+    {
+      "tag": "Textbox", "id": "shared-drive-folder-id", "containerId": "shared-drive-folder-object",
+      "x": 1640, "y": 344, "width": 280, "height": 22,
+      "text": "folder_id", "fontSize": 14, "color": "#f5f7fa",
+      "typeface": "mono", "hAlign": "left", "fixedWidth": true
+    },
+    {
+      "tag": "Shape", "id": "shared-drive-row-members", "containerId": "shared-drive-folder-object",
+      "shape": "rectangle", "x": 1622, "y": 375, "width": 316, "height": 41,
+      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
+      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+    },
+    {
+      "tag": "Textbox", "id": "shared-drive-members", "containerId": "shared-drive-folder-object",
+      "x": 1640, "y": 385, "width": 280, "height": 22,
+      "text": "members[]", "fontSize": 14, "color": "#f5f7fa",
+      "typeface": "mono", "hAlign": "left", "fixedWidth": true
+    },
+    {
+      "tag": "Shape", "id": "shared-drive-row-files", "containerId": "shared-drive-folder-object",
+      "shape": "rectangle", "x": 1622, "y": 416, "width": 316, "height": 37,
+      "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
+      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+    },
+    {
+      "tag": "Textbox", "id": "shared-drive-files", "containerId": "shared-drive-folder-object",
+      "x": 1640, "y": 424, "width": 280, "height": 22,
+      "text": "files[]", "fontSize": 14, "color": "#dfff2f",
+      "typeface": "mono", "hAlign": "left", "fixedWidth": true
+    },
+
+    {
+      "tag": "Textbox", "id": "search-doc-label",
+      "x": 355, "y": 196, "width": 420, "height": 24,
+      "text": "selected result informs the Doc", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "template-prd-label",
-      "x": 705, "y": 104, "width": 100, "height": 36,
-      "text": "creates a new\nGoogle Doc", "fontSize": 11,
+      "tag": "Textbox", "id": "template-doc-label",
+      "x": 355, "y": 500, "width": 420, "height": 24,
+      "text": "copy creates a new Doc", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "prd-shared-drive-label",
-      "x": 375, "y": 550, "width": 405, "height": 36,
-      "text": "new PRD is stored in the\nteam-owned folder", "fontSize": 11,
+      "tag": "Textbox", "id": "doc-comment-label",
+      "x": 1150, "y": 98, "width": 100, "height": 36,
+      "text": "review adds\ncomments", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "comment-prd-label",
-      "x": 1195, "y": 115, "width": 90, "height": 36,
-      "text": "anchors to\nDoc content", "fontSize": 11,
+      "tag": "Textbox", "id": "doc-version-label",
+      "x": 1145, "y": 438, "width": 100, "height": 36,
+      "text": "selects current\nrevision", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
-      "tag": "Textbox", "id": "prd-version-label",
-      "x": 1195, "y": 466, "width": 90, "height": 36,
-      "text": "edits create\nrevisions", "fontSize": 11,
+      "tag": "Textbox", "id": "doc-shared-drive-label",
+      "x": 1535, "y": 330, "width": 90, "height": 50,
+      "text": "file belongs to\nteam-owned\nfolder", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     }
   ],
   "connections": [
     {
-      "from": "research-files-object", "to": "prd-row-research",
+      "from": "search-row-files", "to": "doc-object",
       "color": "#5f9dff", "lineStyle": "dashed", "lineWidth": 0.75,
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
-      "from": "template-object", "to": "prd-object",
+      "from": "template-row-copy", "to": "doc-object",
       "color": "#a8c900", "lineWidth": 1,
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
-      "from": "customer-problem-origin", "to": "prd-row-customer-problem",
+      "from": "customer-problem-origin", "to": "doc-object",
       "color": "#7b8490", "lineStyle": "dashed", "lineWidth": 0.75,
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
-      "from": "contributor-conversation-origin", "to": "prd-row-validated-findings",
+      "from": "contributor-conversation-origin", "to": "doc-object",
       "color": "#7b8490", "lineStyle": "dashed", "lineWidth": 0.75,
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
-      "from": "prd-object", "to": "shared-drive-row-files",
-      "color": "#a8c900", "lineWidth": 0.75,
-      "fromPort": "left", "toPort": "right", "endArrowhead": "arrow"
-    },
-    {
-      "from": "comment-thread-object", "to": "prd-row-id",
+      "from": "doc-object", "to": "comment-thread-object",
       "color": "#5f9dff", "lineStyle": "dashed", "lineWidth": 0.75,
-      "fromPort": "left", "toPort": "right", "endArrowhead": "arrow"
+      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
       "from": "comment-open", "to": "comment-resolved",
@@ -524,7 +459,12 @@
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     },
     {
-      "from": "prd-object", "to": "version-history-object",
+      "from": "doc-row-current-version", "to": "version-history-object",
+      "color": "#a8c900", "lineWidth": 1,
+      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
+    },
+    {
+      "from": "doc-row-id", "to": "shared-drive-row-files",
       "color": "#a8c900", "lineWidth": 1,
       "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
     }
