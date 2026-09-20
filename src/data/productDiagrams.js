@@ -1,8 +1,14 @@
 import githubFeatureDependency from "../assets/github/feature-dependency.png";
+import googleDriveFeatureDependency from "../assets/google-drive/feature-dependency.png";
 import jiraFeatureDependency from "../assets/jira/feature-dependency.png";
 import procoreFeatureDependency from "../assets/procore/feature-dependency.png";
 
 export const productDiagrams = {
+  "google-drive": {
+    src: googleDriveFeatureDependency,
+    alt: "Object and state diagram showing how internal research and a company template feed a product requirements document, how the document is stored in a Shared drive and shared for review, how comment threads move from open to resolved, and how edits create a named final version",
+    source: "diagrams/google-drive-feature-dependency.json",
+  },
   github: {
     src: githubFeatureDependency,
     alt: "Object and state diagram showing how a GitHub issue is tracked in a project, how a branch becomes a pull request, how reviews and checks are monitored, and how merging the pull request closes the linked issue",
