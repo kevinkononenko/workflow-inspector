@@ -8,6 +8,12 @@ import procoreExecuteChangeOrder from "../assets/procore/flow-execute-change-ord
 import procoreMonitorApproval from "../assets/procore/flow-monitor-approval-2025.png";
 import procoreModifyChangeOrder from "../assets/procore/flow-modify-change-order-2025.png";
 import procoreConcludeBudget from "../assets/procore/flow-conclude-budget-2025.png";
+import googleDriveLocateSearchResults from "../assets/google-drive/locate-ai-search-results-2026.jpg";
+import googleDrivePrepareTemplateGallery from "../assets/google-drive/prepare-product-requirements-template-gallery-2025.jpg";
+import googleDriveExecuteShare from "../assets/google-drive/execute-share-review-2026.jpg";
+import googleDriveModifySuggestions from "../assets/google-drive/modify-suggestions-2025.png";
+import googleDriveModifyReplyComment from "../assets/google-drive/modify-reply-comment-2023.png";
+import googleDriveConcludeNamedVersion from "../assets/google-drive/conclude-named-version-2024.png";
 
 // Add supplied content here, one product and stage at a time. Every field is optional
 // while drafting; only complete records appear in the homepage stage explorer.
@@ -185,7 +191,208 @@ export const workflowContent = {
       },
     },
   },
-  "google-drive": {},
+  "google-drive": {
+    define: {
+      outsideProduct: true,
+      featureName: "Align on the customer problem",
+      description:
+        "The product manager agrees with their manager on the specific customer problem the PRD should address before beginning research or writing.",
+      frictionRisk:
+        "Without explicit alignment, the document can solve the wrong problem or expand beyond the team’s priorities.",
+    },
+    locate: {
+      featureName: "Find and synthesize prior research",
+      description:
+        "The product manager uses Gemini-powered search in Google Drive—or an approved AI assistant—to find and synthesize earlier internal research about the customer problem.",
+      frictionRisk:
+        "Relevant evidence may be poorly named, stored in another team’s folder, or missing from the sources available to the search tool.",
+      screenshot: {
+        src: googleDriveLocateSearchResults,
+        alt: "Google Drive search results with an AI Overview summarizing customer-feedback files and filters for narrowing the result set",
+        annotationKey: "google-drive-locate-ai-search-results-2026-v2",
+        objectPosition: "55% 43%",
+        scale: 1,
+        panX: 0,
+        panY: 0,
+        highlights: [
+          {
+            id: "8c2c5925-481e-404a-84d1-96d19445c650",
+            x: 20.235,
+            y: 1.995,
+            width: 52.478,
+            height: 5.901,
+          },
+        ],
+        focusLabel: "AI search summary and matching files",
+        credit: "Google Workspace via Pèse sur start, March 2026",
+        creditUrl: "https://www.pesesurstart.com/2026/03/10/google-impose-ses-outils-ia-gemini-dans-ses-logiciels-et-services-1",
+      },
+      article: {
+        title: "Search and retrieve files in Drive with Gemini",
+        url: "https://support.google.com/drive/answer/16685111",
+      },
+    },
+    prepare: {
+      featureName: "Create the PRD from the company template",
+      description:
+        "The product manager opens the company’s PRD template from the organization’s Template Gallery, makes a copy, and saves it in the appropriate product folder in a Shared drive so the team owns the document and can find it.",
+      frictionRisk:
+        "Using an outdated template or leaving the copy in My Drive can create inconsistent requirements, access problems, and unclear team ownership.",
+      screenshot: {
+        src: googleDrivePrepareTemplateGallery,
+        alt: "Google Docs Select a template gallery showing the Product requirements template among other project templates",
+        annotationKey: "google-drive-prepare-product-requirements-template-gallery-2025-v3",
+        objectPosition: "42% 43%",
+        scale: 1.3,
+        panX: 12.479,
+        panY: 13.287,
+        highlights: [
+          {
+            id: "9907eeb5-ef2e-4f26-a310-b74cb9590e5b",
+            x: 13.87,
+            y: 2.252,
+            width: 21.125,
+            height: 72.048,
+          },
+        ],
+        focusLabel: "Product requirements template",
+        credit: "TimeAtlas, February 2025",
+        creditUrl: "https://www.timeatlas.com/google-docs-letterhead-template/",
+      },
+      article: {
+        title: "Use and create document templates",
+        url: "https://support.google.com/a/users/answer/13003605",
+      },
+    },
+    confirm: {
+      outsideProduct: true,
+      featureName: "Validate the research with past contributors",
+      description:
+        "The product manager reviews the findings with employees who contributed to the earlier research and are still at the company, using their experience to confirm or correct the interpretation.",
+      frictionRisk:
+        "The written research may omit important context, and former contributors may no longer be available to explain the original decisions.",
+    },
+    execute: {
+      featureName: "Draft and share the PRD",
+      description:
+        "The product manager writes the PRD in Google Docs, shares it with the team for asynchronous review, and posts the document link in Slack with clear review expectations.",
+      frictionRisk:
+        "Incorrect permissions, an unclear deadline, or a vague review request can prevent teammates from providing useful feedback.",
+      screenshot: {
+        src: googleDriveExecuteShare,
+        alt: "Google Docs sharing dialog with Commenter access, Notify people enabled, and a review message",
+        annotationKey: "google-drive-execute-share-2026-v1",
+        objectPosition: "50% 50%",
+        scale: 1.2,
+        panX: 10.238,
+        panY: 10.703,
+        highlights: [],
+        focusLabel: "Commenter access and review message",
+        credit: "Mailmeteor, January 2026",
+        creditUrl: "https://mailmeteor.com/blog/how-to-email-from-google-docs",
+      },
+      article: {
+        title: "Share files from Google Drive",
+        url: "https://support.google.com/drive/answer/2494822",
+      },
+    },
+    monitor: {
+      featureName: "Watch comments and follow up",
+      description:
+        "The product manager watches incoming suggestions and comment threads, using notifications to return to feedback that needs clarification or a decision.",
+      frictionRisk:
+        "Feedback can be missed when notifications are too limited, while broad notifications can create enough noise that important comments get overlooked.",
+      screenshot: {
+        src: googleDriveModifySuggestions,
+        alt: "Google Docs PRD in Suggesting mode with tracked edits and open reviewer comment threads",
+        annotationKey: "google-drive-monitor-suggestions-comments-2025-v2",
+        objectPosition: "65% 35%",
+        scale: 1.1,
+        panX: -4.099,
+        panY: 3.441,
+        highlights: [
+          {
+            id: "6ab7c696-945a-4d90-913a-bed6a2eb12b5",
+            x: 76.475,
+            y: 7.771,
+            width: 22.155,
+            height: 75.514,
+          },
+        ],
+        focusLabel: "Incoming suggestions and comments",
+        credit: "Google Workspace Updates, June 2025",
+        creditUrl: "https://workspaceupdates.googleblog.com/2025/06/use-suggestions-in-client-side-encrypted-google-docs.html",
+      },
+      article: {
+        title: "Manage notifications",
+        url: "https://support.google.com/docs/answer/91588",
+      },
+    },
+    modify: {
+      featureName: "Revise and respond to comments",
+      description:
+        "The product manager updates the PRD in response to feedback, replies in each relevant comment thread to explain the change, and @mentions reviewers when another look is needed.",
+      frictionRisk:
+        "Reviewers may not know what changed or which decisions remain open, causing duplicate feedback and extra review cycles.",
+      screenshot: {
+        src: googleDriveModifyReplyComment,
+        alt: "Google Docs comment thread with a response being typed and the Reply button ready to send it",
+        annotationKey: "google-drive-modify-reply-comment-2023-v2",
+        objectPosition: "50% 52%",
+        scale: 1,
+        panX: 0,
+        panY: 0,
+        highlights: [
+          {
+            id: "dd7a9d74-921a-4b8f-b1de-faf3d16ffda9",
+            x: 3.848,
+            y: 35.878,
+            width: 94.477,
+            height: 29.339,
+          },
+        ],
+        focusLabel: "Written response and Reply action",
+        credit: "Zapier, August 2023",
+        creditUrl: "https://zapier.com/blog/how-to-use-google-docs-comments/",
+      },
+      article: {
+        title: "Suggest edits in Google Docs",
+        url: "https://support.google.com/docs/answer/6033474",
+      },
+    },
+    conclude: {
+      featureName: "Publish the finished PRD version",
+      description:
+        "After resolving the remaining feedback, the product manager names the current Google Docs version ‘Published — ready for build’ so design and engineering have a clear finished baseline for beginning work.",
+      frictionRisk:
+        "If the final version is not named—or new edits continue without another named milestone—partners may build from an unclear or changing baseline.",
+      screenshot: {
+        src: googleDriveConcludeNamedVersion,
+        alt: "Google Docs version history showing the action to name a version and the resulting named version in the history",
+        annotationKey: "google-drive-conclude-named-version-2024-v2",
+        objectPosition: "50% 48%",
+        scale: 1,
+        panX: 0,
+        panY: 0,
+        highlights: [
+          {
+            id: "9252e169-b8ea-4d2d-a70b-48addd61bd11",
+            x: 1.401,
+            y: 24.185,
+            width: 48.107,
+            height: 45.007,
+          },
+        ],
+        focusLabel: "Name this version and named result",
+        credit: "OpenStax via Workforce LibreTexts, February 2024",
+        creditUrl: "https://workforce.libretexts.org/Bookshelves/Information_Technology/Computer_Applications/Workplace_Software_and_Skills_(OpenStax)/03:_Creating_and_Working_in_Documents/3.09:_Versions_and_Version_History",
+      },
+      article: {
+        title: "Find what's changed in a file",
+        url: "https://support.google.com/drive/answer/2409045",
+      },
+    },
+  },
   github: {
     define: {
       featureName: "Review the issue",
@@ -606,10 +813,12 @@ function createEmptyStageRecord(productSlug, stage) {
   const content = workflowContent[productSlug]?.[stage.id] ?? {};
   const screenshot = content.screenshot ?? {};
   const article = content.article ?? {};
+  const productName = products.find((product) => product.slug === productSlug)?.name ?? productSlug;
 
   return {
     id: `${productSlug}-${stage.id}`,
     productSlug,
+    productName,
     stageId: stage.id,
     featureName: content.featureName ?? "",
     description: content.description ?? "",
@@ -655,12 +864,13 @@ export function getProductWorkflow(productSlug) {
 export function isWorkflowStageReady(record) {
   const hasRequiredArticle =
     record.outsideProduct || (record.article.title && record.article.url);
+  const hasRequiredScreenshot =
+    record.outsideProduct || (record.screenshot.src && record.screenshot.alt);
 
   return Boolean(
     record.featureName &&
       record.description &&
-      record.screenshot.src &&
-      record.screenshot.alt &&
+      hasRequiredScreenshot &&
       hasRequiredArticle,
   );
 }

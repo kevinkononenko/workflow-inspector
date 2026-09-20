@@ -62,6 +62,19 @@ field conversation or approval, when that work is necessary to complete the job.
 
 Screenshots should make the flow feel like one continuous session in the current product:
 
+- Every time an in-product workflow card is added or substantially revised, search for its
+  supporting screenshot in the same work session. A card is not complete until a screenshot has
+  been found, checked, stored locally, and connected to the stage—or the search has established
+  that no current, trustworthy image is available. Cards marked `outsideProduct` are the explicit
+  exception because their visual treatment does not render a product screenshot.
+- Start with image search across official product documentation, release notes, product blogs, and
+  recent official walkthroughs. Expand to a reputable current secondary source only when the
+  official sources do not show the required interface state.
+- Before adding the image, verify that it actually shows the feature or evidence named by the
+  card, that its interface generation is compatible with the rest of the workflow, and that the
+  source page and publication or recording date are known.
+- Store the verified image in `src/assets/<product>/`, then add descriptive alt text, a stable
+  annotation key, a concise focus label, the source and date credit, and the source-page URL.
 - Every screenshot must come from the last four years.
 - Within a workflow, prefer one official source set or screenshots captured during the same general
   time period. They should represent the same interface generation and visual design.

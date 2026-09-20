@@ -19,13 +19,14 @@ export const products = [
   },
   {
     name: "Google Drive",
-    description: "Create, organize, and share the files my team needs.",
-    persona: "All Employees",
+    description: "Create and share an important document with my team.",
+    persona: "Product Managers",
     productType: "Cloud Storage & Collaboration",
     icon: siGoogledrive,
     color: "#4285F4",
     code: "02",
     slug: "google-drive",
+    journey: "Create, review, and finalize a product requirements document",
   },
   {
     name: "GitHub",
