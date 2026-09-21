@@ -33,13 +33,13 @@
     {
       "tag": "Textbox", "id": "search-files", "containerId": "search-results-object",
       "x": 50, "y": 189, "width": 185, "height": 22,
-      "text": "result_files[]", "fontSize": 14, "color": "#5f9dff",
+      "text": "result_files[]", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "search-files-stage", "containerId": "search-results-object",
       "x": 240, "y": 189, "width": 85, "height": 22,
-      "text": "LOCATE", "fontSize": 12, "color": "#b9c0ca",
+      "text": "LOCATE", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
     {
@@ -100,13 +100,13 @@
     {
       "tag": "Textbox", "id": "template-copy", "containerId": "template-object",
       "x": 50, "y": 505, "width": 185, "height": 22,
-      "text": "make_copy", "fontSize": 14, "color": "#ffb84d",
+      "text": "make_copy", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "template-copy-stage", "containerId": "template-object",
       "x": 240, "y": 505, "width": 85, "height": 22,
-      "text": "PREPARE", "fontSize": 12, "color": "#b9c0ca",
+      "text": "PREPARE", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
 
@@ -152,7 +152,7 @@
     {
       "tag": "Textbox", "id": "doc-id", "containerId": "doc-object",
       "x": 820, "y": 228, "width": 320, "height": 22,
-      "text": "document_id", "fontSize": 14, "color": "#dfff2f",
+      "text": "document_id", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
@@ -176,13 +176,13 @@
     {
       "tag": "Textbox", "id": "doc-permissions", "containerId": "doc-object",
       "x": 820, "y": 310, "width": 220, "height": 22,
-      "text": "permissions[]", "fontSize": 14, "color": "#dfff2f",
+      "text": "permissions[]", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "doc-permissions-stage", "containerId": "doc-object",
       "x": 1045, "y": 310, "width": 90, "height": 22,
-      "text": "EXECUTE", "fontSize": 12, "color": "#b9c0ca",
+      "text": "EXECUTE", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
     {
@@ -194,7 +194,7 @@
     {
       "tag": "Textbox", "id": "doc-current-version", "containerId": "doc-object",
       "x": 820, "y": 351, "width": 320, "height": 22,
-      "text": "current_version", "fontSize": 14, "color": "#5f9dff",
+      "text": "current_version", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
 
@@ -243,13 +243,13 @@
     {
       "tag": "Textbox", "id": "comment-replies", "containerId": "comment-thread-object",
       "x": 1260, "y": 190, "width": 170, "height": 22,
-      "text": "replies[]", "fontSize": 14, "color": "#ffb84d",
+      "text": "replies[]", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "comment-replies-stage", "containerId": "comment-thread-object",
       "x": 1435, "y": 190, "width": 80, "height": 22,
-      "text": "MODIFY", "fontSize": 12, "color": "#b9c0ca",
+      "text": "MODIFY", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
     {
@@ -261,13 +261,13 @@
     {
       "tag": "Textbox", "id": "comment-open-stage", "containerId": "comment-thread-object",
       "x": 1260, "y": 271, "width": 110, "height": 18,
-      "text": "MONITOR", "fontSize": 12, "color": "#b9c0ca",
+      "text": "MONITOR", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "center", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "comment-open-name", "containerId": "comment-thread-object",
       "x": 1260, "y": 294, "width": 110, "height": 22,
-      "text": "Open", "fontSize": 15, "color": "#ffffff",
+      "text": "Open", "fontSize": 15, "color": "#f5f7fa",
       "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
@@ -276,7 +276,7 @@
       "bgColor": "#1a2028", "borderColor": "#69727e", "borderWidth": 1,
       "cornerRadius": "round", "styleMode": "plain",
       "texts": [
-        { "text": "Resolved", "fontSize": 15, "color": "#ffffff", "typeface": "clean" }
+        { "text": "Resolved", "fontSize": 15, "color": "#f5f7fa", "typeface": "clean" }
       ]
     },
 
@@ -325,13 +325,13 @@
     {
       "tag": "Textbox", "id": "version-name", "containerId": "version-history-object",
       "x": 1260, "y": 578, "width": 170, "height": 22,
-      "text": "version_name", "fontSize": 14, "color": "#5f9dff",
+      "text": "version_name", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "version-name-stage", "containerId": "version-history-object",
       "x": 1435, "y": 578, "width": 80, "height": 22,
-      "text": "CONCLUDE", "fontSize": 12, "color": "#b9c0ca",
+      "text": "CONCLUDE", "fontSize": 12, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "right", "fixedWidth": true
     },
 
@@ -392,7 +392,7 @@
     {
       "tag": "Textbox", "id": "shared-drive-files", "containerId": "shared-drive-folder-object",
       "x": 1640, "y": 424, "width": 280, "height": 22,
-      "text": "files[]", "fontSize": 14, "color": "#dfff2f",
+      "text": "files[]", "fontSize": 14, "color": "#f5f7fa",
       "typeface": "mono", "hAlign": "left", "fixedWidth": true
     },
 
