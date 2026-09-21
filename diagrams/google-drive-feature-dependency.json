@@ -404,25 +404,25 @@
     },
     {
       "tag": "Textbox", "id": "template-doc-label",
-      "x": 410, "y": 438, "width": 300, "height": 24,
+      "x": 250, "y": 314, "width": 135, "height": 24,
       "text": "copy creates a new Doc", "fontSize": 11,
-      "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
+      "color": "#cbd1d8", "typeface": "clean", "hAlign": "right", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "doc-comment-label",
-      "x": 1150, "y": 112, "width": 100, "height": 36,
+      "x": 1115, "y": 138, "width": 85, "height": 36,
       "text": "review adds\ncomments", "fontSize": 11,
-      "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
+      "color": "#cbd1d8", "typeface": "clean", "hAlign": "right", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "doc-version-label",
-      "x": 1145, "y": 418, "width": 100, "height": 36,
+      "x": 1190, "y": 378, "width": 150, "height": 24,
       "text": "selects current\nrevision", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     },
     {
       "tag": "Textbox", "id": "doc-shared-drive-label",
-      "x": 1535, "y": 390, "width": 90, "height": 50,
+      "x": 1490, "y": 356, "width": 120, "height": 36,
       "text": "file belongs to\nteam-owned\nfolder", "fontSize": 11,
       "color": "#cbd1d8", "typeface": "clean", "hAlign": "center", "fixedWidth": true
     }
@@ -435,8 +435,14 @@
     },
     {
       "from": "template-object", "to": "doc-row-id",
-      "color": "#a8c900", "lineWidth": 1,
-      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
+      "color": "#a8c900", "lineWidth": 1, "connectorStyle": "straight",
+      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow",
+      "points": [
+        { "x": 350, "y": 447.5 },
+        { "x": 390, "y": 447.5 },
+        { "x": 390, "y": 238.5 },
+        { "x": 802, "y": 238.5 }
+      ]
     },
     {
       "from": "customer-problem-origin", "to": "doc-row-id",
@@ -450,8 +456,14 @@
     },
     {
       "from": "doc-row-id", "to": "comment-row-id",
-      "color": "#5f9dff", "lineStyle": "dashed", "lineWidth": 0.75,
-      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
+      "color": "#5f9dff", "lineStyle": "dashed", "lineWidth": 0.75, "connectorStyle": "straight",
+      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow",
+      "points": [
+        { "x": 1158, "y": 238.5 },
+        { "x": 1210, "y": 238.5 },
+        { "x": 1210, "y": 118.5 },
+        { "x": 1242, "y": 118.5 }
+      ]
     },
     {
       "from": "comment-open", "to": "comment-resolved",
@@ -460,13 +472,28 @@
     },
     {
       "from": "doc-row-current-version", "to": "version-history-object",
-      "color": "#a8c900", "lineWidth": 1,
-      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
+      "color": "#a8c900", "lineWidth": 1, "connectorStyle": "straight",
+      "fromPort": "right", "toPort": "top", "endArrowhead": "arrow",
+      "points": [
+        { "x": 1158, "y": 361.5 },
+        { "x": 1168, "y": 361.5 },
+        { "x": 1168, "y": 405 },
+        { "x": 1390, "y": 405 },
+        { "x": 1390, "y": 420 }
+      ]
     },
     {
       "from": "doc-row-id", "to": "shared-drive-row-files",
-      "color": "#a8c900", "lineWidth": 1,
-      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow"
+      "color": "#a8c900", "lineWidth": 1, "connectorStyle": "straight",
+      "fromPort": "right", "toPort": "left", "endArrowhead": "arrow",
+      "points": [
+        { "x": 1158, "y": 238.5 },
+        { "x": 1190, "y": 238.5 },
+        { "x": 1190, "y": 390 },
+        { "x": 1600, "y": 390 },
+        { "x": 1600, "y": 434.5 },
+        { "x": 1622, "y": 434.5 }
+      ]
     }
   ]
 }
