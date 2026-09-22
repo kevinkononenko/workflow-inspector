@@ -8,7 +8,9 @@ import { chromium } from "playwright-core";
 
 const execFileAsync = promisify(execFile);
 const projectRoot = resolve(import.meta.dirname, "..");
-const [inputArgument, outputArgument] = process.argv.slice(2);
+const [inputArgument, outputArgument, scaleArgument = "2"] = process.argv.slice(2);
+const pixelDensity = Number(scaleArgument);
+if (!Number.isFinite(pixelDensity) || pixelDensity <= 0) throw new Error("Pixel density must be positive");
 
 if (!inputArgument || !outputArgument) {
   throw new Error(
@@ -43,7 +45,7 @@ try {
   browser = await chromium.launch({ headless: true, executablePath: chromiumPath });
   const page = await browser.newPage({
     viewport: { width: 1600, height: 900 },
-    deviceScaleFactor: 2,
+    deviceScaleFactor: pixelDensity,
   });
 
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "load" });

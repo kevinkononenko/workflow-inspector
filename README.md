@@ -114,3 +114,18 @@ Diagram source files live in `diagrams/` and are rendered with Eraser's open-sou
 ```bash
 npm run diagram:procore
 ```
+
+## HyperFrames video
+
+The 25-second Procore workflow overview and Define example lives in
+`videos/eraser-to-problem/`. Its `index.html` composition is the source of truth for the video's
+content, timing, layout, and animation. Generated previews and rendered video files should be
+treated as outputs, not edited as source.
+
+```bash
+npm run video:preview
+npm run video:check
+npm run video:render
+```
+
+HyperFrames requires Node.js 22 or newer and FFmpeg for local MP4 rendering.

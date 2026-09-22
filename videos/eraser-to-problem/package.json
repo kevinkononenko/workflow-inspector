@@ -1,0 +1,14 @@
+{
+  "name": "eraser-to-problem",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "hyperframes preview",
+    "check": "hyperframes check --at-transitions",
+    "render": "hyperframes render",
+    "publish": "hyperframes publish"
+  },
+  "devDependencies": {
+    "hyperframes": "0.8.58"
+  }
+}
