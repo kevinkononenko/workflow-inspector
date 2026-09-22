@@ -117,7 +117,7 @@ npm run diagram:procore
 
 ## HyperFrames video
 
-The 25-second Procore workflow overview and Define example lives in
+The 29-second whiteboard-style Procore workflow overview and Define example lives in
 `videos/eraser-to-problem/`. Its `index.html` composition is the source of truth for the video's
 content, timing, layout, and animation. Generated previews and rendered video files should be
 treated as outputs, not edited as source.

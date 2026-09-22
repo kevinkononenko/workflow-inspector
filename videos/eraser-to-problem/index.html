@@ -2,7 +2,7 @@
 <html lang="en" data-resolution="landscape">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
-<title>Procore — Field call</title>
+<title>Procore — Whiteboard study</title>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0}html,body{width:1920px;height:1080px;overflow:hidden;background:#090d11}
@@ -49,16 +49,49 @@
 #focus-execute,#focus-monitor{box-shadow:none}
 #focus-modify{left:1136px;top:541px;width:180px;height:58px}
 #focus-conclude{left:1136px;top:421px;width:180px;height:58px}
+/* Whiteboard trial: original timing and geometry, ink and marker palette. */
+html,body{background:#faf8f2}
+#root{background:#faf8f2;color:#24415a}
+#workflow-intro{background:transparent}
+#intro-title,#chapter-title{color:#24415a;font-weight:600;letter-spacing:-1.6px}
+#intro-title::after,#chapter-title::after{content:"";display:block;width:150px;height:9px;margin-top:12px;background:#a9d5f0;border-radius:70% 20% 45% 30%;transform:rotate(-1deg)}
+.label{color:#24415a}
+#visuals svg [stroke]:not([stroke="none"]){stroke:#24415a}
+#visuals svg [fill]:not([fill="none"]){fill:#faf8f2}
+#visuals svg [fill="#20354d"]:not([fill="none"]){fill:#e8f0f3}
+#visuals svg [fill="#89dfad"]:not([fill="none"]),#visuals svg [fill="#a9ccff"]:not([fill="none"]){fill:#a9d5f0}
+#visuals #screen svg > rect:first-child{fill:#fff;stroke:#24415a;stroke-width:3}
+#spark{background:#2676a7}
+#detail{background:#fff;border-color:#24415a;border-radius:10px;color:#24415a}
+.ui-title,.selected{color:#24415a}.selected{border-bottom-color:#2676a7}
+.row{background:#edf6fb;border-color:#97bdd5;color:#24415a}
+#cell-focus{border-color:#2676a7}
+.stage-focus{border-color:#2676a7;box-shadow:0 0 0 3px #faf8f2;border-radius:12px 9px 14px 8px}
+.stage-focus::before{background:#2676a7;color:#fff}
+#focus-execute,#focus-monitor{box-shadow:none}
+#watermark{color:#526879}
+#open-marker{position:absolute;inset:0;pointer-events:none}
+#open-marker path{fill:none;stroke:#2676a7;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+#completion-check{position:absolute;left:1530px;top:685px;width:80px;height:60px}
+#visuals #completion-check path{fill:none;stroke:#2676a7;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+#visuals #link path,#visuals #link-two path{stroke:#2676a7;stroke-linecap:round;stroke-linejoin:round}
+#title-card{display:flex;align-items:center;justify-content:center;text-align:center}
+#title-copy{width:1600px;margin-top:-45px}
+#title-copy h1{font-size:96px;line-height:1.14;letter-spacing:-3px;font-weight:600;color:#24415a}
+#title-copy h1 span{display:block}
+#title-copy p{margin-top:38px;font-size:42px;font-weight:400;letter-spacing:1px;color:#526879}
 </style>
 </head>
 <body>
-<div data-hf-id="hf-z7xn" id="root" data-composition-id="main" data-start="0" data-duration="25" data-width="1920" data-height="1080">
-<div data-hf-id="hf-am2t" id="workflow-intro" class="clip" data-start="0" data-duration="12.4" data-track-index="0">
+<div data-hf-id="hf-z7xn" id="root" data-composition-id="main" data-start="0" data-duration="29" data-width="1920" data-height="1080">
+<div data-hf-id="hf-1n3x" id="title-card" class="clip" data-start="0" data-duration="4" data-track-index="0"><div data-hf-id="hf-v1i9" id="title-copy"><h1 data-hf-id="hf-m3fm"><span data-hf-id="hf-3de0">Change Management</span> <span data-hf-id="hf-3ra3">in Construction</span></h1><p data-hf-id="hf-cfqx">Workflow Breakdown</p></div></div>
+<div data-hf-id="hf-am2t" id="workflow-intro" class="clip" data-start="4" data-duration="12.4" data-track-index="0">
   <div data-hf-id="hf-weo1" id="intro-content">
     <h1 data-hf-id="hf-nx9r" id="intro-title">8 Stages of Change Event Workflow</h1>
     <div data-hf-id="hf-n070" id="diagram-camera" data-layout-allow-overflow="">
       <img data-hf-id="hf-deeo" id="workflow-map" src="assets/procore-workflow.png" alt="Procore Eraser workflow diagram" data-duration="12.4">
       <div data-hf-id="hf-7ekr" id="focus-define" class="stage-focus" data-number="1"></div>
+      <svg data-hf-id="hf-xcud" id="open-marker" viewBox="0 0 1367 632" aria-hidden="true"><path data-hf-id="hf-cohd" d="M121 452 C108 439 54 442 42 456 C28 476 111 485 122 465 C128 455 119 448 108 447" /></svg>
       <div data-hf-id="hf-8go3" id="focus-locate" class="stage-focus" data-number="2"></div>
       <div data-hf-id="hf-lmmd" id="focus-prepare" class="stage-focus" data-number="3"></div>
       <div data-hf-id="hf-bw7p" id="focus-confirm" class="stage-focus" data-number="4"></div>
@@ -69,7 +102,7 @@
     </div>
   </div>
 </div>
-<div data-hf-id="hf-le8f" id="opening" class="clip" data-start="12" data-duration="13" data-track-index="0">
+<div data-hf-id="hf-le8f" id="opening" class="clip" data-start="16" data-duration="13" data-track-index="0">
 <div data-hf-id="hf-57k8" id="visuals">
   <div data-hf-id="hf-5iuv" id="phone"><svg data-hf-id="hf-4arl" viewBox="0 0 340 490" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <rect data-hf-id="hf-mhas" x="25" y="4" width="290" height="480" rx="45" fill="#15202b" stroke="#83a4ca" stroke-width="3" />
@@ -107,6 +140,7 @@
   <p data-hf-id="hf-mui0" id="entry-label" class="label"><span data-hf-id="hf-og6k">Enter details of</span> <span data-hf-id="hf-67f1">requested change</span></p>
   <div data-hf-id="hf-ysj4" id="link-two"><svg data-hf-id="hf-wxpe" viewBox="0 0 285 44" fill="none" stroke="#6b91c2" stroke-width="3"><path data-hf-id="hf-vm5m" d="M0 22h280m-16-15 16 15-16 15" /></svg></div>
   <p data-hf-id="hf-9qka" id="event-label" class="label"><span data-hf-id="hf-osgx">Change Event</span> <span data-hf-id="hf-h3gv">created</span></p>
+  <div data-hf-id="hf-nvjb" id="completion-check" aria-hidden="true"><svg data-hf-id="hf-3ze7" viewBox="0 0 80 60"><path data-hf-id="hf-tnbp" d="M15 31 Q24 39 30 46 Q47 23 66 12" /></svg></div>
   <div data-hf-id="hf-gybu" id="detail">
     <div data-hf-id="hf-3u1j" class="ui-body"><h2 data-hf-id="hf-a8v1" class="ui-title">Change Events</h2><div data-hf-id="hf-5rmk" class="tabs"><span data-hf-id="hf-nj0k" class="selected">Line Items</span><span data-hf-id="hf-9vhx">RFQs</span></div>
     <div data-hf-id="hf-iijy" class="grid headers"><div data-hf-id="hf-xjwa">CE title</div><div data-hf-id="hf-vsr9">Quantity</div><div data-hf-id="hf-vmqj">Unit cost</div><div data-hf-id="hf-rnzj">Cost ROM</div></div>
@@ -116,8 +150,8 @@
   </div>
 </div>
 </div>
-<h1 data-hf-id="hf-jb9z" id="chapter-title" class="clip" data-start="12" data-duration="13" data-track-index="2">1- Define</h1>
-<div data-hf-id="hf-043p" id="watermark" class="clip" data-start="0" data-duration="25" data-track-index="1"><img data-hf-id="hf-tl30" src="assets/production-grade.png" alt="" data-duration="25"><span data-hf-id="hf-1pn9">Production Grade</span></div>
+<h1 data-hf-id="hf-jb9z" id="chapter-title" class="clip" data-start="16" data-duration="13" data-track-index="2">1- Define</h1>
+<div data-hf-id="hf-043p" id="watermark" class="clip" data-start="0" data-duration="29" data-track-index="1"><img data-hf-id="hf-tl30" src="assets/production-grade.png" alt="" data-duration="29"><span data-hf-id="hf-1pn9">Production Grade</span></div>
 </div>
 <script>
 const tl=gsap.timeline({paused:true});
@@ -130,13 +164,13 @@ tl.to('#phone',{rotation:0,duration:.15},.89);
 tl.to('#waves',{opacity:0,duration:.15},1.46);
 tl.to('#phone',{x:-600,scale:.75,duration:.65,ease:'power3.inOut'},.95);
 tl.to('#call-label',{x:-600,duration:.65,ease:'power3.inOut'},.95);
-tl.fromTo('#link',{scaleX:0,opacity:0,transformOrigin:'left center'},{scaleX:1,opacity:1,duration:.35},1.35);
+tl.fromTo('#link',{opacity:0},{opacity:1,duration:.1},1.35);
 tl.fromTo('#spark',{opacity:0},{opacity:1,duration:.1},1.4);
 tl.to('#spark',{x:165,duration:.35,ease:'power2.inOut'},1.4);
 tl.to('#spark',{opacity:0,duration:.1},1.75);
 tl.fromTo('#screen',{opacity:0,y:20},{opacity:1,y:0,duration:.4,ease:'power3.out'},1.6);
 tl.fromTo('#entry-label',{opacity:0,y:12},{opacity:1,y:0,duration:.35},1.7);
-tl.fromTo('#link-two',{scaleX:0,opacity:0,transformOrigin:'left center'},{scaleX:1,opacity:1,duration:.35},2.9);
+tl.fromTo('#link-two',{opacity:0},{opacity:1,duration:.1},2.9);
 tl.fromTo('#document',{opacity:0,scale:.85,y:20},{opacity:1,scale:1,y:0,duration:.45,ease:'power3.out'},3.05);
 tl.fromTo('#event-label',{opacity:0,y:14},{opacity:1,y:0,duration:.35},3.15);
 tl.fromTo('#plus',{opacity:0,scale:.5,transformOrigin:'267px 347px'},{opacity:1,scale:1,duration:.3,ease:'back.out(1.3)'},3.3);
@@ -174,6 +208,22 @@ tl.to('#workflow-map',{clipPath:'inset(346px 1101px 106px 16px)',duration:.65,ea
 tl.to('#diagram-camera',{scale:3.3,x:341,y:-1037,duration:1.5,ease:'power3.inOut'},5.65);
 tl.to('#focus-define',{backgroundColor:'rgba(169,204,255,0.13)',duration:.4},7.2);
 tl.to('#intro-content',{opacity:0,duration:3.2,ease:'power2.inOut'},9.2);
+// Short pen-draw reveals on the vector linework, without changing scene timing.
+document.querySelectorAll('#phone g[data-hf-id="hf-yqa9"] path, #lines path').forEach(path=>{
+  const length=path.getTotalLength();
+  const start=path.closest('#phone')?12.15:22.15;
+  tl.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:.7,ease:'power1.inOut'},start);
+});
+// Marker gestures share the paused root timeline and remain seek-safe.
+for(const [selector,start,duration] of [['#link path',14.16,.65],['#link-two path',21.64,.65],['#open-marker path',7.6,.8],['#completion-check path',22.95,.65]]){
+  document.querySelectorAll(selector).forEach(path=>{
+    const length=path.getTotalLength();
+    tl.fromTo(path,{opacity:0,strokeDasharray:length,strokeDashoffset:length},{opacity:1,strokeDashoffset:0,duration,ease:'power1.inOut'},start);
+  });
+}
+// Four-second title shot; all approved animation beats retain their spacing.
+for(const tween of tl.getChildren(false,true,false)) tween.startTime(tween.startTime()+4);
+tl.to('#title-copy',{opacity:0,duration:.45,ease:'power2.inOut'},3.55);
 window.__timelines=window.__timelines||{};window.__timelines.main=tl;
 </script>
 </body>
