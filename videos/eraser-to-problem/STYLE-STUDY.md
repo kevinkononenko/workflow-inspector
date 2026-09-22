@@ -16,3 +16,8 @@ Regenerate from the repository root:
 
 Use npm run video:preview, npm run video:check, and npm run video:render at the
 repository root. index.html is the source of truth. Generated previews are ignored.
+
+Music: Dream Culture by Kevin MacLeod, source 0:20–0:49. The audio track starts
+at video time zero, fades in over 0.6s, holds at 0.35 gain, and fades out over
+the last 2.5s. Publish with the attribution in MUSIC-CREDIT.md. The older timestamped
+MP4 predates the music; change-management-whiteboard-music.mp4 includes it.
