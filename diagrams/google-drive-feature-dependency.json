@@ -16,7 +16,7 @@
       "tag": "Shape", "id": "search-row-query", "containerId": "search-results-object",
       "shape": "rectangle", "x": 32, "y": 138, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "search-query", "containerId": "search-results-object",
@@ -28,7 +28,7 @@
       "tag": "Shape", "id": "search-row-files", "containerId": "search-results-object",
       "shape": "rectangle", "x": 32, "y": 179, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "search-files", "containerId": "search-results-object",
@@ -46,7 +46,7 @@
       "tag": "Shape", "id": "search-row-overview", "containerId": "search-results-object",
       "shape": "rectangle", "x": 32, "y": 220, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "search-overview", "containerId": "search-results-object",
@@ -71,7 +71,7 @@
       "tag": "Shape", "id": "template-row-id", "containerId": "template-object",
       "shape": "rectangle", "x": 32, "y": 413, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "template-id", "containerId": "template-object",
@@ -83,7 +83,7 @@
       "tag": "Shape", "id": "template-row-name", "containerId": "template-object",
       "shape": "rectangle", "x": 32, "y": 454, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "template-name", "containerId": "template-object",
@@ -95,7 +95,7 @@
       "tag": "Shape", "id": "template-row-copy", "containerId": "template-object",
       "shape": "rectangle", "x": 32, "y": 495, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "template-copy", "containerId": "template-object",
@@ -147,7 +147,7 @@
       "tag": "Shape", "id": "doc-row-id", "containerId": "doc-object",
       "shape": "rectangle", "x": 802, "y": 218, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "doc-id", "containerId": "doc-object",
@@ -159,7 +159,7 @@
       "tag": "Shape", "id": "doc-row-parent-folder", "containerId": "doc-object",
       "shape": "rectangle", "x": 802, "y": 259, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "doc-parent-folder", "containerId": "doc-object",
@@ -171,7 +171,7 @@
       "tag": "Shape", "id": "doc-row-permissions", "containerId": "doc-object",
       "shape": "rectangle", "x": 802, "y": 300, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "doc-permissions", "containerId": "doc-object",
@@ -189,7 +189,7 @@
       "tag": "Shape", "id": "doc-row-current-version", "containerId": "doc-object",
       "shape": "rectangle", "x": 802, "y": 341, "width": 356, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "doc-current-version", "containerId": "doc-object",
@@ -214,7 +214,7 @@
       "tag": "Shape", "id": "comment-row-id", "containerId": "comment-thread-object",
       "shape": "rectangle", "x": 1242, "y": 98, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-id", "containerId": "comment-thread-object",
@@ -226,7 +226,7 @@
       "tag": "Shape", "id": "comment-row-anchor", "containerId": "comment-thread-object",
       "shape": "rectangle", "x": 1242, "y": 139, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-anchor", "containerId": "comment-thread-object",
@@ -238,7 +238,7 @@
       "tag": "Shape", "id": "comment-row-replies", "containerId": "comment-thread-object",
       "shape": "rectangle", "x": 1242, "y": 180, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "comment-replies", "containerId": "comment-thread-object",
@@ -296,7 +296,7 @@
       "tag": "Shape", "id": "version-row-id", "containerId": "version-history-object",
       "shape": "rectangle", "x": 1242, "y": 488, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-id", "containerId": "version-history-object",
@@ -308,7 +308,7 @@
       "tag": "Shape", "id": "version-row-modified", "containerId": "version-history-object",
       "shape": "rectangle", "x": 1242, "y": 529, "width": 296, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-modified", "containerId": "version-history-object",
@@ -320,7 +320,7 @@
       "tag": "Shape", "id": "version-row-name", "containerId": "version-history-object",
       "shape": "rectangle", "x": 1242, "y": 570, "width": 296, "height": 38,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "version-name", "containerId": "version-history-object",
@@ -351,7 +351,7 @@
       "tag": "Shape", "id": "shared-drive-row-drive-id", "containerId": "shared-drive-folder-object",
       "shape": "rectangle", "x": 1622, "y": 293, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "shared-drive-id", "containerId": "shared-drive-folder-object",
@@ -363,7 +363,7 @@
       "tag": "Shape", "id": "shared-drive-row-folder-id", "containerId": "shared-drive-folder-object",
       "shape": "rectangle", "x": 1622, "y": 334, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "shared-drive-folder-id", "containerId": "shared-drive-folder-object",
@@ -375,7 +375,7 @@
       "tag": "Shape", "id": "shared-drive-row-members", "containerId": "shared-drive-folder-object",
       "shape": "rectangle", "x": 1622, "y": 375, "width": 316, "height": 41,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "shared-drive-members", "containerId": "shared-drive-folder-object",
@@ -387,7 +387,7 @@
       "tag": "Shape", "id": "shared-drive-row-files", "containerId": "shared-drive-folder-object",
       "shape": "rectangle", "x": 1622, "y": 416, "width": 316, "height": 37,
       "bgColor": "#151a20", "borderColor": "#343b45", "borderWidth": 1,
-      "cornerRadius": "sharp", "styleMode": "plain", "texts": []
+      "cornerRadius": [0, 0, 0, 0], "styleMode": "plain", "texts": []
     },
     {
       "tag": "Textbox", "id": "shared-drive-files", "containerId": "shared-drive-folder-object",
